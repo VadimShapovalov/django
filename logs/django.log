@@ -1,0 +1,5 @@
+[INFO    :   django.utils.autoreload] - 2024-01-12 18:43:44,113 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-12 18:44:00,254 : index @ 0016: index get request
+[INFO    :             django.server] - 2024-01-12 18:44:00,256 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[INFO    :               app_1.views] - 2024-01-12 18:44:19,762 : contact @ 0023: contact get request
+[INFO    :             django.server] - 2024-01-12 18:44:19,765 : log_message @ 0212: "GET /contact/ HTTP/1.1" 200 99
