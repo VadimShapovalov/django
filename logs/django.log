@@ -3,3 +3,16 @@
 [INFO    :             django.server] - 2024-01-12 18:44:00,256 : log_message @ 0212: "GET / HTTP/1.1" 200 254
 [INFO    :               app_1.views] - 2024-01-12 18:44:19,762 : contact @ 0023: contact get request
 [INFO    :             django.server] - 2024-01-12 18:44:19,765 : log_message @ 0212: "GET /contact/ HTTP/1.1" 200 99
+[INFO    :   django.utils.autoreload] - 2024-01-17 18:20:01,611 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 18:20:37,569 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 18:20:38,208 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-17 18:20:42,954 : index @ 0017: index get request
+[INFO    :             django.server] - 2024-01-17 18:20:42,955 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[WARNING :            django.request] - 2024-01-17 18:20:43,172 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-17 18:20:43,174 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2613
+[INFO    :             django.server] - 2024-01-17 18:20:53,869 : log_message @ 0212: "GET /clients HTTP/1.1" 301 0
+[INFO    :             django.server] - 2024-01-17 18:20:53,878 : log_message @ 0212: "GET /clients/ HTTP/1.1" 200 88
+[INFO    :   django.utils.autoreload] - 2024-01-17 18:32:07,493 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-17 18:32:08,917 : index @ 0017: index get request
+[INFO    :             django.server] - 2024-01-17 18:32:08,919 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[INFO    :             django.server] - 2024-01-17 18:32:14,866 : log_message @ 0212: "GET /clients/ HTTP/1.1" 200 757

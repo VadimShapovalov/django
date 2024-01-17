@@ -4,6 +4,7 @@
 # *Сохраняйте в логи данные о посещении страниц
 
 from django.http import HttpResponse
+from .models import Client
 from django.shortcuts import render
 import logging
 
@@ -21,4 +22,10 @@ def contact(request):
            '<h2>email: mail@mail.com</h2>'
            '<p>Телефон: + 7 555 55 55</p>')
     logger.info('contact get request')
+    return HttpResponse(res)
+
+
+def client_view(request):
+    clients = Client.objects.all()
+    res = '<br>'.join([str(client) for client in clients])
     return HttpResponse(res)
