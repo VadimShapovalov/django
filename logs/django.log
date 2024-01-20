@@ -16,3 +16,717 @@
 [INFO    :               app_1.views] - 2024-01-17 18:32:08,917 : index @ 0017: index get request
 [INFO    :             django.server] - 2024-01-17 18:32:08,919 : log_message @ 0212: "GET / HTTP/1.1" 200 254
 [INFO    :             django.server] - 2024-01-17 18:32:14,866 : log_message @ 0212: "GET /clients/ HTTP/1.1" 200 757
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:22:31,309 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-19 18:23:22,689 : index @ 0017: index get request
+[INFO    :             django.server] - 2024-01-19 18:23:22,690 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[WARNING :            django.request] - 2024-01-19 18:23:38,927 : log_response @ 0241: Not Found: /orders/5/
+[WARNING :             django.server] - 2024-01-19 18:23:38,928 : log_message @ 0212: "GET /orders/5/ HTTP/1.1" 404 2808
+[INFO    :             django.server] - 2024-01-19 18:25:07,688 : log_message @ 0212: "GET /clients/ HTTP/1.1" 200 757
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:29:07,254 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:30:21,573 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-19 18:30:24,366 : index @ 0017: index get request
+[INFO    :             django.server] - 2024-01-19 18:30:24,367 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[WARNING :            django.request] - 2024-01-19 18:30:36,936 : log_response @ 0241: Not Found: /orders/5/
+[WARNING :             django.server] - 2024-01-19 18:30:36,937 : log_message @ 0212: "GET /orders/5/ HTTP/1.1" 404 2808
+[WARNING :            django.request] - 2024-01-19 18:30:58,700 : log_response @ 0241: Not Found: /orders/3/
+[WARNING :             django.server] - 2024-01-19 18:30:58,701 : log_message @ 0212: "GET /orders/3/ HTTP/1.1" 404 2808
+[ERROR   :            django.request] - 2024-01-19 18:35:01,252 : log_response @ 0241: Internal Server Error: /orders/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 38, in all_client_orders
+    return render(request, 'app_1/all_client_orders.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 196, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+[ERROR   :             django.server] - 2024-01-19 18:35:01,262 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 500 165959
+[ERROR   :            django.request] - 2024-01-19 18:36:27,365 : log_response @ 0241: Internal Server Error: /orders/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 38, in all_client_orders
+    return render(request, 'app_1/all_client_orders.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 196, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+[ERROR   :             django.server] - 2024-01-19 18:36:27,373 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 500 166111
+[ERROR   :            django.request] - 2024-01-19 18:36:32,663 : log_response @ 0241: Internal Server Error: /orders/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 38, in all_client_orders
+    return render(request, 'app_1/all_client_orders.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 196, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+[ERROR   :             django.server] - 2024-01-19 18:36:32,670 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 500 166111
+[ERROR   :            django.request] - 2024-01-19 18:36:45,727 : log_response @ 0241: Internal Server Error: /orders/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 38, in all_client_orders
+    return render(request, 'app_1/all_client_orders.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 196, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+[ERROR   :             django.server] - 2024-01-19 18:36:45,734 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 500 166111
+[INFO    :             django.server] - 2024-01-19 18:37:06,830 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 454
+[ERROR   :            django.request] - 2024-01-19 18:37:45,521 : log_response @ 0241: Internal Server Error: /orders/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 38, in all_client_orders
+    return render(request, 'app_1/all_client_orders.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\template\defaulttags.py", line 196, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+[ERROR   :             django.server] - 2024-01-19 18:37:45,529 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 500 166111
+[INFO    :             django.server] - 2024-01-19 18:42:16,263 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2139
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:43:59,434 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:44:47,244 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-19 18:44:53,003 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2361
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:47:24,819 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-19 18:47:25,587 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-19 18:47:40,038 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2801
+[INFO    :             django.server] - 2024-01-19 18:48:33,519 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2801
+[INFO    :             django.server] - 2024-01-19 18:48:35,062 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2836
+[INFO    :             django.server] - 2024-01-19 18:49:13,655 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2836
+[INFO    :             django.server] - 2024-01-19 18:49:15,083 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2871
+[INFO    :             django.server] - 2024-01-19 18:49:43,531 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2871
+[INFO    :             django.server] - 2024-01-19 18:49:44,258 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2871
+[INFO    :             django.server] - 2024-01-19 18:49:45,432 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2956
+[INFO    :             django.server] - 2024-01-19 18:50:13,029 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 2956
+[INFO    :             django.server] - 2024-01-19 18:50:14,396 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 3041
+[INFO    :             django.server] - 2024-01-19 18:50:27,595 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3037
+[INFO    :             django.server] - 2024-01-19 18:51:22,701 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3037
+[INFO    :             django.server] - 2024-01-19 18:51:23,974 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3082
+[INFO    :             django.server] - 2024-01-19 18:51:38,610 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3082
+[INFO    :             django.server] - 2024-01-19 18:51:39,846 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3037
+[INFO    :             django.server] - 2024-01-19 18:51:48,871 : log_message @ 0212: "GET /orders/1 HTTP/1.1" 200 3029
+[INFO    :             django.server] - 2024-01-19 18:58:25,164 : log_message @ 0212: "GET /orders/2 HTTP/1.1" 200 3029
+[INFO    :             django.server] - 2024-01-19 18:58:29,323 : log_message @ 0212: "GET /orders/3 HTTP/1.1" 200 3041
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:41:22,130 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-20 17:41:25,711 : index @ 0017: index get request
+[INFO    :             django.server] - 2024-01-20 17:41:25,723 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[WARNING :            django.request] - 2024-01-20 17:41:26,110 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-20 17:41:26,111 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2814
+[INFO    :             django.server] - 2024-01-20 17:41:50,425 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3037
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:47:57,496 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:47:58,121 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:52:27,476 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:52:28,521 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:55:45,190 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 17:55:45,949 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 17:55:46,183 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3034
+[INFO    :             django.server] - 2024-01-20 17:55:47,163 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 200 3034
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:07:58,771 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:07:59,555 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:20:06,609 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-20 18:20:13,261 : index @ 0018: index get request
+[INFO    :             django.server] - 2024-01-20 18:20:13,269 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[ERROR   :            django.request] - 2024-01-20 18:20:22,369 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([product for product in orders.products.all() if orders.date <= date.today() - timedelta(days=7)])
+                                               ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-20 18:20:22,372 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69104
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:22:57,085 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:22:57,826 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:23:00,346 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([order for order.products in orders if order.date <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in <listcomp>
+    sevendays = sorted([order for order.products in orders if order.date <= date.today() - timedelta(days=7)])
+                                  ^^^^^
+NameError: name 'order' is not defined
+[ERROR   :             django.server] - 2024-01-20 18:23:00,349 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 72930
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:25:50,072 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:25:50,865 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:25:51,295 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in <listcomp>
+    sevendays = sorted([order for order in orders if order.date <= date.today() - timedelta(days=7)])
+                                                     ^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'date'
+[ERROR   :             django.server] - 2024-01-20 18:25:51,300 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 73223
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:26:20,910 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:26:21,609 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:26:21,810 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in <listcomp>
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'NoneType' and 'datetime.date'
+[ERROR   :             django.server] - 2024-01-20 18:26:21,814 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 73509
+[ERROR   :            django.request] - 2024-01-20 18:27:13,142 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in <listcomp>
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'NoneType' and 'datetime.date'
+[ERROR   :             django.server] - 2024-01-20 18:27:13,144 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 73509
+[ERROR   :            django.request] - 2024-01-20 18:29:13,512 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 45, in <listcomp>
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'NoneType' and 'datetime.date'
+[ERROR   :             django.server] - 2024-01-20 18:29:13,516 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 73509
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:30:09,394 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:30:10,041 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:30:10,441 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in order_sort_time
+    sevendays = sorted([order for order in orders], key=lambda x: x.date_created)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'datetime.date'
+[ERROR   :             django.server] - 2024-01-20 18:30:10,443 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69375
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:30:53,711 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:30:54,456 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:30:54,928 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 47, in order_sort_time
+    sevendays = sorted([order for order in orders], key=lambda x: x.date_created)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'datetime.date'
+[ERROR   :             django.server] - 2024-01-20 18:30:54,931 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69307
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:31:35,103 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:31:35,772 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 18:32:04,895 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3237
+[INFO    :             django.server] - 2024-01-20 18:32:46,734 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3275
+[INFO    :             django.server] - 2024-01-20 18:33:17,049 : log_message @ 0212: "GET /products/1 HTTP/1.1" 200 3263
+[INFO    :             django.server] - 2024-01-20 18:33:23,132 : log_message @ 0212: "GET /products/7 HTTP/1.1" 200 3301
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:35:30,325 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 18:35:33,606 : log_message @ 0212: "GET /products/7 HTTP/1.1" 200 3301
+[INFO    :             django.server] - 2024-01-20 18:35:40,956 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3275
+[INFO    :             django.server] - 2024-01-20 18:50:15,872 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3302
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:51:47,888 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:51:48,586 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:51:50,670 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 18:51:50,673 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69377
+[ERROR   :            django.request] - 2024-01-20 18:54:03,916 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 18:54:03,918 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69377
+[ERROR   :            django.request] - 2024-01-20 18:56:22,546 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 18:56:22,550 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69377
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:56:51,447 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:56:52,362 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:57:24,033 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 18:57:24,823 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 18:57:26,226 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in order_sort_time
+    sevendays = sorted([order for order in orders if date(order.date_created) <= date.today() - timedelta(days=7)])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 46, in <listcomp>
+    sevendays = sorted([order for order in orders if date(order.date_created) <= date.today() - timedelta(days=7)])
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'datetime.date' object cannot be interpreted as an integer
+[ERROR   :             django.server] - 2024-01-20 18:57:26,230 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 73329
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:04:07,429 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:04:08,228 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:04:11,022 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3302
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:05:28,655 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:05:29,334 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 19:05:30,474 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 49, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 19:05:30,478 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69573
+[ERROR   :            django.request] - 2024-01-20 19:09:05,101 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 49, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 19:09:05,104 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69573
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:11:23,541 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:11:24,303 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-20 19:11:24,960 : log_response @ 0241: Internal Server Error: /products/3
+Traceback (most recent call last):
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py", line 54, in order_sort_time
+    sevendays = sorted([order for order in orders if order.date_created <= date.today() - timedelta(days=7)])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Order' and 'Order'
+[ERROR   :             django.server] - 2024-01-20 19:11:24,963 : log_message @ 0212: "GET /products/3 HTTP/1.1" 500 69991
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:11:45,622 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:11:46,302 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:11:46,609 : log_message @ 0212: "GET /products/3 HTTP/1.1" 200 3198
+[INFO    :             django.server] - 2024-01-20 19:13:23,284 : log_message @ 0212: "GET /products/7 HTTP/1.1" 200 3041
+[INFO    :             django.server] - 2024-01-20 19:13:28,322 : log_message @ 0212: "GET /products/1 HTTP/1.1" 200 3186
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:21:22,158 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:21:22,950 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:21:29,738 : log_message @ 0212: "GET /products/1/5 HTTP/1.1" 301 0
+[INFO    :             django.server] - 2024-01-20 19:21:29,768 : log_message @ 0212: "GET /products/1/5/ HTTP/1.1" 200 3186
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:24:25,783 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:24:26,550 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:24:27,153 : log_message @ 0212: "GET /products/1/5/ HTTP/1.1" 200 3134
+[INFO    :             django.server] - 2024-01-20 19:25:03,683 : log_message @ 0212: "GET /products/1/59/ HTTP/1.1" 200 3238
+[INFO    :             django.server] - 2024-01-20 19:25:12,395 : log_message @ 0212: "GET /products/1/590/ HTTP/1.1" 200 3290
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:26:16,253 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:26:16,892 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:26:19,029 : log_message @ 0212: "GET /products/1/590/ HTTP/1.1" 200 3290
+[INFO    :             django.server] - 2024-01-20 19:29:01,095 : log_message @ 0212: "GET /products/3/590/ HTTP/1.1" 200 3302
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:31:22,757 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:31:23,539 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:31:25,179 : log_message @ 0212: "GET /products/3/590/ HTTP/1.1" 200 3339
+[INFO    :             django.server] - 2024-01-20 19:34:22,449 : log_message @ 0212: "GET /products/3/590/ HTTP/1.1" 200 3609
+[INFO    :             django.server] - 2024-01-20 19:34:36,395 : log_message @ 0212: "GET /products/3/590/ HTTP/1.1" 200 3609
+[INFO    :             django.server] - 2024-01-20 19:34:37,524 : log_message @ 0212: "GET /products/3/590/ HTTP/1.1" 200 3609
+[INFO    :             django.server] - 2024-01-20 19:34:43,227 : log_message @ 0212: "GET /products/3/5/ HTTP/1.1" 200 1577
+[INFO    :             django.server] - 2024-01-20 19:35:16,125 : log_message @ 0212: "GET /products/3/50/ HTTP/1.1" 200 2931
+[INFO    :             django.server] - 2024-01-20 19:36:35,828 : log_message @ 0212: "GET /products/3/50/ HTTP/1.1" 200 2995
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:37:39,303 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:37:40,002 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:38:09,702 : log_message @ 0212: "GET /products/3/50/ HTTP/1.1" 200 2781
+[INFO    :             django.server] - 2024-01-20 19:38:10,605 : log_message @ 0212: "GET /products/3/50/ HTTP/1.1" 200 2781
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:40:07,774 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:40:08,460 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:40:08,641 : log_message @ 0212: "GET /products/3/50/ HTTP/1.1" 200 2781
+[INFO    :             django.server] - 2024-01-20 19:40:16,340 : log_message @ 0212: "GET /products/3/500/ HTTP/1.1" 200 3407
+[INFO    :             django.server] - 2024-01-20 19:40:23,179 : log_message @ 0212: "GET /products/3/5/ HTTP/1.1" 200 1531
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:41:26,044 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:41:26,720 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 19:41:31,217 : log_message @ 0212: "GET /orders/5 HTTP/1.1" 301 0
+[INFO    :             django.server] - 2024-01-20 19:41:31,236 : log_message @ 0212: "GET /orders/5/ HTTP/1.1" 200 3034
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:42:37,837 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 19:42:38,555 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[WARNING :            django.request] - 2024-01-20 19:42:50,511 : log_response @ 0241: Not Found: /products/1
+[WARNING :             django.server] - 2024-01-20 19:42:50,512 : log_message @ 0212: "GET /products/1 HTTP/1.1" 404 3031
+[INFO    :             django.server] - 2024-01-20 19:42:56,010 : log_message @ 0212: "GET /products/1/5/ HTTP/1.1" 200 1527

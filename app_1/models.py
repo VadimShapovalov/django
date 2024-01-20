@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import date
 
 class Client(models.Model):
     name = models.CharField(max_length=100)
@@ -16,13 +16,16 @@ class Product(models.Model):
     name = models.CharField(max_length=150)
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
-    amount = models.IntegerField()
-    date = models.DateField(auto_now_add=True)
+    amount = models.IntegerField(default=1)
+    date = models.DateField(default=date(year=2001, month=1, day=21))
 
+    def __str__(self):
+        return f'{self.name}   price: ${self.price}'
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE, blank=False)
     products = models.ManyToManyField(Product)
-    total_price = models.DecimalField(max_digits=8, decimal_places=2)
+    total_price = models.DecimalField(max_digits=8, decimal_places=2, default=0)
+    date_created = models.DateField(default=date.today())
 
 
