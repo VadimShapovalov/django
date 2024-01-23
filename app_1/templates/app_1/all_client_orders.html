@@ -6,17 +6,10 @@
 <h1>Заказы клиента {{ client.name }}:</h1>
 <ul>
 
-    {% for order in orders %}
-    <li><b>Номер заказа №{{ order.id }}</b></li>
-            <br>
-            <ul>
-            {% for product in order.products.all %}
-                <li>{{ product }}</li>
-            {% endfor %}
-                <li><b>Общая стоимость заказа: ${{ order.total_price }}</b></li>
-                <br>
-            </ul>
-    {% endfor %}
+{% for order in orders %}
+<li><b><a href="{% url 'products_from_order' order.id %}"> Номер заказа №{{ order.id }}. Время создания заказа: {{ order.date_created }}  Общая стоимость заказа: {{ order.total_price }}</a></b><br>
+<br>
+{% endfor %}
 </ul>
 
 {% endblock %}

@@ -57,3 +57,7 @@ def order_sort_time(request, client_id, days):
     }
     return render(request, 'app_1/order_sort_time.html', context=context)
 
+
+def products_from_order(request, order_id):
+    order = Order.objects.get(id=order_id)
+    return render(request, 'app_1/products_from_order.html', context={'order': order})

@@ -3,18 +3,12 @@
 {% block title %}Заказы клиента за выбранный период{% endblock %}
 
 {% block content %}
-<h1>Заказы клиента {{ client.name }} за последние {{ days }} дней:</h1>
+<h1>Продукты из заказов клиента "{{ client.name }}" за последние {{ days }} дней:</h1>
 <ul>
     {% for order in products_ %}
-    <li><b>Номер заказа №{{ order.id }}. Дата создания заказа {{ order.date_created }}</b></li>
-            <br>
-            <ul>
             {% for product in order.products.all %}
-                <li>{{ product }}</li>
+                <li>{{ product }} Дата заказа продукта: {{ order.date_created }}</li>
             {% endfor %}
-                <li><b>Общая стоимость заказа: ${{ order.total_price }}</b></li>
-                <br>
-            </ul>
     {% endfor %}
 </ul>
 {% endblock %}

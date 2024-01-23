@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import date
 
+
 class Client(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=200)
@@ -21,6 +22,7 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.name}   price: ${self.price}'
+
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE, blank=False)
