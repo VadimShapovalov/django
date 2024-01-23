@@ -4,10 +4,12 @@
 # *Сохраняйте в логи данные о посещении страниц
 
 from django.http import HttpResponse
-from .models import Client, Order
+from .models import Client, Order, Product
 from django.shortcuts import render
 import logging
 from datetime import date, timedelta
+from .forms import ProductForm, NewProductForm
+from django.core.files.storage import FileSystemStorage
 
 logger = logging.getLogger(__name__)
 
@@ -61,3 +63,68 @@ def order_sort_time(request, client_id, days):
 def products_from_order(request, order_id):
     order = Order.objects.get(id=order_id)
     return render(request, 'app_1/products_from_order.html', context={'order': order})
+
+
+def update_product(request):
+    # product = Product.objects.get(id=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            product = form.cleaned_data['product_']
+
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            amount = form.cleaned_data['amount']
+            date = form.cleaned_data['date']
+            photo = form.cleaned_data['photo']
+            logger.info(f'Update {product.name}')
+            message = 'product update'
+            product.name = name
+            product.description = description
+            product.price = price
+            product.amount = amount
+            product.date = date
+            product.photo = photo
+            fs = FileSystemStorage()
+            fs.save(product.name, photo)
+            product.save()
+    else:
+        form = ProductForm()
+        message = 'Заполните форму'
+    context = {
+        'form': form,
+        'message': message,
+    }
+    return render(request, 'app_1/update_product.html', context=context)
+
+
+def create_product(request):
+    # product = Product.objects.get(id=product_id)
+    if request.method == 'POST':
+        form = NewProductForm(request.POST, request.FILES)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            # product = form.cleaned_data['product_']
+
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            amount = form.cleaned_data['amount']
+            date = form.cleaned_data['date']
+            photo = form.cleaned_data['photo']
+            logger.info(f'Create {name=}')
+            message = 'product created successfully'
+            product = Product(name=name, description=description, price=price, amount=amount, date=date, photo=photo)
+            fs = FileSystemStorage()
+            fs.save(product.name, photo)
+            product.save()
+    else:
+        form = NewProductForm()
+        message = 'Заполните форму'
+    context = {
+        'form': form,
+        'message': message,
+    }
+    return render(request, 'app_1/create_product.html', context=context)
