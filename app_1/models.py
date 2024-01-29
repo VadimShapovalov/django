@@ -2,6 +2,9 @@ from django.db import models
 from datetime import date
 
 
+
+
+
 class Client(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=200)
@@ -10,7 +13,8 @@ class Client(models.Model):
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"Client's name: {self.name}, email: {self.email}"
+        return self.name
+        # return f"Client's name: {self.name}, email: {self.email}"
 
 
 class Product(models.Model):
@@ -30,5 +34,8 @@ class Order(models.Model):
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     date_created = models.DateField(default=date.today())
+
+    def __str__(self):
+        return f'order №{self.pk}, client "{self.client}".'
 
 

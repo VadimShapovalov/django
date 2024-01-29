@@ -1170,3 +1170,252 @@ django.db.utils.OperationalError: database is locked
 [INFO    :               app_1.views] - 2024-01-23 18:38:00,441 : create_product @ 0117: Create name='Kidav21'
 [INFO    :             django.server] - 2024-01-23 18:38:00,479 : log_message @ 0212: "POST /productcreat/ HTTP/1.1" 200 1430
 [INFO    :             django.server] - 2024-01-23 18:38:44,176 : log_message @ 0212: "GET /productcreat/ HTTP/1.1" 200 1397
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:00:49,551 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :               app_1.views] - 2024-01-29 15:00:52,958 : index @ 0021: index get request
+[INFO    :             django.server] - 2024-01-29 15:00:52,959 : log_message @ 0212: "GET / HTTP/1.1" 200 254
+[WARNING :            django.request] - 2024-01-29 15:00:53,231 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-29 15:00:53,246 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 3602
+[INFO    :             django.server] - 2024-01-29 15:00:59,722 : log_message @ 0212: "GET /admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,778 : log_message @ 0212: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+[INFO    :             django.server] - 2024-01-29 15:00:59,816 : log_message @ 0212: "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,817 : log_message @ 0212: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,822 : log_message @ 0212: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,828 : log_message @ 0212: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,837 : log_message @ 0212: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,840 : log_message @ 0212: "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:00:59,852 : log_message @ 0212: "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO    :             django.server] - 2024-01-29 15:01:02,791 : log_message @ 0212: "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4319
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:02:55,561 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\djangoHW\settings.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:02:56,351 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:05:42,268 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 15:05:47,686 : log_message @ 0212: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-29 15:05:47,734 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 5944
+[INFO    :             django.server] - 2024-01-29 15:05:47,887 : log_message @ 0212: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO    :             django.server] - 2024-01-29 15:05:47,900 : log_message @ 0212: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO    :             django.server] - 2024-01-29 15:05:47,905 : log_message @ 0212: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO    :             django.server] - 2024-01-29 15:07:06,290 : log_message @ 0212: "GET /admin/auth/user/add/ HTTP/1.1" 200 11238
+[INFO    :             django.server] - 2024-01-29 15:07:06,343 : log_message @ 0212: "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+[INFO    :             django.server] - 2024-01-29 15:07:06,352 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:07:06,379 : log_message @ 0212: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO    :             django.server] - 2024-01-29 15:07:06,382 : log_message @ 0212: "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+[INFO    :             django.server] - 2024-01-29 15:07:06,401 : log_message @ 0212: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO    :             django.server] - 2024-01-29 15:07:06,416 : log_message @ 0212: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO    :             django.server] - 2024-01-29 15:07:06,426 : log_message @ 0212: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO    :             django.server] - 2024-01-29 15:07:06,472 : log_message @ 0212: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO    :             django.server] - 2024-01-29 15:07:06,473 : log_message @ 0212: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+[INFO    :             django.server] - 2024-01-29 15:07:06,513 : log_message @ 0212: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO    :             django.server] - 2024-01-29 15:07:06,525 : log_message @ 0212: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[INFO    :             django.server] - 2024-01-29 15:07:06,534 : log_message @ 0212: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+[INFO    :             django.server] - 2024-01-29 15:07:06,563 : log_message @ 0212: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[INFO    :             django.server] - 2024-01-29 15:07:56,512 : log_message @ 0212: "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-29 15:07:56,566 : log_message @ 0212: "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23743
+[INFO    :             django.server] - 2024-01-29 15:07:56,641 : log_message @ 0212: "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+[INFO    :             django.server] - 2024-01-29 15:07:56,643 : log_message @ 0212: "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[INFO    :             django.server] - 2024-01-29 15:07:56,644 : log_message @ 0212: "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[INFO    :             django.server] - 2024-01-29 15:07:56,645 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:07:56,645 : log_message @ 0212: "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[INFO    :             django.server] - 2024-01-29 15:07:56,708 : log_message @ 0212: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[INFO    :             django.server] - 2024-01-29 15:07:56,784 : log_message @ 0212: "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[INFO    :             django.server] - 2024-01-29 15:07:56,785 : log_message @ 0212: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[INFO    :             django.server] - 2024-01-29 15:07:56,786 : log_message @ 0212: "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[INFO    :             django.server] - 2024-01-29 15:07:56,791 : log_message @ 0212: "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[INFO    :             django.server] - 2024-01-29 15:07:56,791 : log_message @ 0212: "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[INFO    :             django.server] - 2024-01-29 15:07:56,791 : log_message @ 0212: "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[INFO    :             django.server] - 2024-01-29 15:08:47,878 : log_message @ 0212: "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-29 15:08:47,915 : log_message @ 0212: "GET /admin/auth/user/ HTTP/1.1" 200 12642
+[INFO    :             django.server] - 2024-01-29 15:08:47,960 : log_message @ 0212: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+[INFO    :             django.server] - 2024-01-29 15:08:47,962 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:08:47,995 : log_message @ 0212: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO    :             django.server] - 2024-01-29 15:08:48,035 : log_message @ 0212: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO    :             django.server] - 2024-01-29 15:08:48,035 : log_message @ 0212: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO    :             django.server] - 2024-01-29 15:08:48,035 : log_message @ 0212: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[INFO    :             django.server] - 2024-01-29 15:12:47,020 : log_message @ 0212: "GET /admin/auth/user/1/change/ HTTP/1.1" 200 23483
+[INFO    :             django.server] - 2024-01-29 15:12:47,079 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:36:38,909 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:36:39,794 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 15:36:42,592 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 8269
+[INFO    :             django.server] - 2024-01-29 15:36:46,550 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 15962
+[INFO    :             django.server] - 2024-01-29 15:36:46,589 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:36:53,816 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 35698
+[INFO    :             django.server] - 2024-01-29 15:36:53,844 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:36:56,932 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 47898
+[INFO    :             django.server] - 2024-01-29 15:36:56,963 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:37:18,428 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 15962
+[INFO    :             django.server] - 2024-01-29 15:37:18,468 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:39:42,538 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 15:39:43,359 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 15:39:44,577 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 14584
+[INFO    :             django.server] - 2024-01-29 15:39:44,630 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:39:55,543 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 38968
+[INFO    :             django.server] - 2024-01-29 15:39:55,572 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:40:03,574 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 47898
+[INFO    :             django.server] - 2024-01-29 15:40:03,607 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:49:08,804 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 47898
+[INFO    :             django.server] - 2024-01-29 15:49:08,850 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:49:09,975 : log_message @ 0212: "GET /admin/app_1/product/add/ HTTP/1.1" 200 12663
+[INFO    :             django.server] - 2024-01-29 15:49:10,008 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:49:29,281 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 38968
+[INFO    :             django.server] - 2024-01-29 15:49:29,316 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:49:33,807 : log_message @ 0212: "GET /admin/app_1/order/add/ HTTP/1.1" 200 37504
+[INFO    :             django.server] - 2024-01-29 15:49:33,841 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:57:16,927 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 47898
+[INFO    :             django.server] - 2024-01-29 15:57:17,004 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:57:18,449 : log_message @ 0212: "GET /admin/app_1/product/378/change/ HTTP/1.1" 200 13329
+[INFO    :             django.server] - 2024-01-29 15:57:18,492 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:59:12,231 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 47898
+[INFO    :             django.server] - 2024-01-29 15:59:12,282 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:59:38,346 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 14584
+[INFO    :             django.server] - 2024-01-29 15:59:38,392 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 15:59:40,029 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 38968
+[INFO    :             django.server] - 2024-01-29 15:59:40,066 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:04:40,005 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:04:40,874 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:05:25,187 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:07:01,330 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:07:02,079 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:07:02,701 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 52785
+[INFO    :             django.server] - 2024-01-29 16:07:05,999 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 52785
+[INFO    :             django.server] - 2024-01-29 16:07:06,061 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:07:11,271 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16069
+[INFO    :             django.server] - 2024-01-29 16:07:11,303 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:07:16,719 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 52785
+[INFO    :             django.server] - 2024-01-29 16:07:16,750 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:07:18,709 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 45454
+[INFO    :             django.server] - 2024-01-29 16:07:18,745 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:07:24,619 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16069
+[INFO    :             django.server] - 2024-01-29 16:07:24,650 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:07:27,096 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 45454
+[INFO    :             django.server] - 2024-01-29 16:07:27,124 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:07:57,482 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:07:58,240 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:08:01,053 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16597
+[INFO    :             django.server] - 2024-01-29 16:08:01,106 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:08:04,762 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 45454
+[INFO    :             django.server] - 2024-01-29 16:08:04,792 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:08:26,278 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:08:27,053 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:08:28,074 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 47662
+[INFO    :             django.server] - 2024-01-29 16:08:28,104 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:08:39,223 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:08:39,913 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:08:40,278 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 52785
+[INFO    :             django.server] - 2024-01-29 16:08:40,317 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:08:43,248 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 47677
+[INFO    :             django.server] - 2024-01-29 16:08:43,279 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:15:18,128 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16069
+[INFO    :             django.server] - 2024-01-29 16:15:18,179 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:15:26,613 : log_message @ 0212: "GET /admin/app_1/client/?o=1 HTTP/1.1" 200 16789
+[INFO    :             django.server] - 2024-01-29 16:15:26,650 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:16:10,438 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:16:11,303 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:16:13,838 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 47677
+[INFO    :             django.server] - 2024-01-29 16:16:13,874 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:16:26,855 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53022
+[INFO    :             django.server] - 2024-01-29 16:16:26,892 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:16:42,668 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:16:43,412 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:16:43,830 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 52983
+[INFO    :             django.server] - 2024-01-29 16:16:43,870 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:17:24,249 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:17:25,037 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:17:25,554 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53469
+[INFO    :             django.server] - 2024-01-29 16:17:25,602 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:17:41,819 : log_message @ 0212: "GET /admin/app_1/product/?o=2.3 HTTP/1.1" 200 56323
+[INFO    :             django.server] - 2024-01-29 16:17:41,871 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:18:21,438 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:18:22,189 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:18:23,080 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 48467
+[INFO    :             django.server] - 2024-01-29 16:18:23,122 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:24:59,730 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:25:00,506 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:25:07,025 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54261
+[INFO    :             django.server] - 2024-01-29 16:25:07,060 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:25:14,752 : log_message @ 0212: "GET /admin/app_1/order/?date_created__gte=2024-01-22&date_created__lt=2024-01-30 HTTP/1.1" 200 19947
+[INFO    :             django.server] - 2024-01-29 16:25:14,792 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:25:17,166 : log_message @ 0212: "GET /admin/app_1/order/? HTTP/1.1" 200 54261
+[INFO    :             django.server] - 2024-01-29 16:25:17,203 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:25:18,711 : log_message @ 0212: "GET /admin/app_1/order/?date_created__gte=2024-01-01&date_created__lt=2024-02-01 HTTP/1.1" 200 60184
+[INFO    :             django.server] - 2024-01-29 16:25:18,745 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:28:08,309 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:28:09,048 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:28:09,592 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54261
+[INFO    :             django.server] - 2024-01-29 16:28:09,635 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:28:10,839 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53989
+[INFO    :             django.server] - 2024-01-29 16:28:10,873 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:29:50,736 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:29:51,578 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:29:52,183 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16547
+[INFO    :             django.server] - 2024-01-29 16:29:52,246 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:29:56,005 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16547
+[INFO    :             django.server] - 2024-01-29 16:29:56,041 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:29:59,788 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54741
+[INFO    :             django.server] - 2024-01-29 16:29:59,817 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:30:02,045 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53990
+[INFO    :             django.server] - 2024-01-29 16:30:02,090 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:35:46,302 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:35:47,078 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:35:48,893 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54741
+[INFO    :             django.server] - 2024-01-29 16:35:48,936 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:35:51,873 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53990
+[INFO    :             django.server] - 2024-01-29 16:35:51,942 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:35:56,377 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 53990
+[INFO    :             django.server] - 2024-01-29 16:35:56,411 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:36:30,889 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:36:31,622 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:36:33,744 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 54083
+[INFO    :             django.server] - 2024-01-29 16:36:33,788 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:36:48,379 : log_message @ 0212: "POST /admin/app_1/product/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-29 16:36:48,444 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 54083
+[INFO    :             django.server] - 2024-01-29 16:36:48,479 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:38:32,717 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:38:33,392 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:15,845 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:16,452 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:23,326 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:24,146 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:47,747 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:39:48,418 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:41:32,189 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:41:32,865 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:41:33,238 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 54083
+[INFO    :             django.server] - 2024-01-29 16:41:33,299 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:41:38,168 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 11580
+[INFO    :             django.server] - 2024-01-29 16:41:38,202 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:41:58,959 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:41:59,681 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:42:00,096 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 12131
+[INFO    :             django.server] - 2024-01-29 16:42:00,157 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:42:59,610 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54741
+[INFO    :             django.server] - 2024-01-29 16:42:59,661 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:43:12,124 : log_message @ 0212: "GET /admin/app_1/order/?_facets=True HTTP/1.1" 200 59220
+[INFO    :             django.server] - 2024-01-29 16:43:12,164 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:43:12,320 : log_message @ 0212: "GET /static/admin/img/icon-hidelink.svg HTTP/1.1" 200 784
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:45:55,039 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:45:55,858 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:49:03,712 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:49:04,528 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:49:07,096 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 54083
+[INFO    :             django.server] - 2024-01-29 16:49:07,134 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:49:08,773 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 13265
+[INFO    :             django.server] - 2024-01-29 16:49:08,819 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:49:08,944 : log_message @ 0212: "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:49:51,931 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:49:52,589 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:49:54,008 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 13265
+[INFO    :             django.server] - 2024-01-29 16:49:54,059 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:50:09,415 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:50:10,161 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:50:11,374 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 13492
+[INFO    :             django.server] - 2024-01-29 16:50:11,413 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:50:56,992 : trigger_reload @ 0266: C:\Users\Vadim\Desktop\DjangoHomework\djangoHW\app_1\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-29 16:50:57,739 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-29 16:50:58,070 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16547
+[INFO    :             django.server] - 2024-01-29 16:50:58,126 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:51:00,653 : log_message @ 0212: "GET /admin/app_1/client/ HTTP/1.1" 200 16547
+[INFO    :             django.server] - 2024-01-29 16:51:00,694 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:51:02,639 : log_message @ 0212: "GET /admin/app_1/order/ HTTP/1.1" 200 54741
+[INFO    :             django.server] - 2024-01-29 16:51:02,673 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:51:04,671 : log_message @ 0212: "GET /admin/app_1/product/ HTTP/1.1" 200 54083
+[INFO    :             django.server] - 2024-01-29 16:51:04,707 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-29 16:51:06,652 : log_message @ 0212: "GET /admin/app_1/product/98/change/ HTTP/1.1" 200 13265
+[INFO    :             django.server] - 2024-01-29 16:51:06,695 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
